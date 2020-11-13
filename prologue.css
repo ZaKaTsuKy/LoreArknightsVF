@@ -1,0 +1,9 @@
+@charset "UTF-8";
+body {
+    background-image: url('https://cdn.discordapp.com/attachments/673566076658909205/770034883451551824/backnologo.jpg');
+    /* wall 1 ak https://pbs.twimg.com/media/DS-CPryVwAE_N5Y.jpg:large */
+    /*wall 2 ak https://images4.alphacoders.com/103/thumb-1920-1034459.jpg*/
+    background-attachment: fixed;
+    z-index: 0;
+    background-size: auto;
+}

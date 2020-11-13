@@ -34,7 +34,7 @@
         animation-fill-mode: both;
     }*/
     img.blake2 {
-        width: 600px;
+        width: 30%;
         height: auto;
         visibility: hidden;
         position: fixed;
@@ -50,6 +50,28 @@
         opacity: 1;
     }
     img.blake2:hover {
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+    img.event {
+        width: 50%;
+        height: auto;
+        visibility: hidden;
+        position: fixed;
+        box-shadow: 8px 3px 12px black;
+        transition: visibility 0.01s, opacity 0.7s;
+        opacity: 0;
+        z-index: 4;
+        right: 10px;
+        top: 250px;
+        border: 2px solid black;
+        border-radius: 15%;
+    }
+    a:hover img.event {
+        visibility: visible;
+        opacity: 1;
+    }
+    img.event:hover {
         visibility: hidden !important;
         opacity: 0 !important;
     }
@@ -319,7 +341,7 @@
 
 /*taille ecran entre 1080 et 1920*/
 
-@media all and (min-width: 1080px) and (max-width:1919px) {
+@media all and (min-width: 1220px) and (max-width:1919px) {
     body {
         background-image: url('https://cdn.discordapp.com/attachments/673566076658909205/770034883451551824/backnologo.jpg');
         /* wall 1 ak https://pbs.twimg.com/media/DS-CPryVwAE_N5Y.jpg:large */
@@ -354,7 +376,7 @@
         animation-fill-mode: both;
     }*/
     img.blake2 {
-        width: 60px;
+        width: 30%;
         height: auto;
         visibility: hidden;
         position: fixed;
@@ -370,6 +392,28 @@
         opacity: 1;
     }
     img.blake2:hover {
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+    img.event {
+        width: 50%;
+        height: auto;
+        visibility: hidden;
+        position: fixed;
+        box-shadow: 8px 3px 12px black;
+        transition: visibility 0.01s, opacity 0.7s;
+        opacity: 0;
+        z-index: 4;
+        right: 10px;
+        top: 250px;
+        border: 2px solid black;
+        border-radius: 15%;
+    }
+    a:hover img.event {
+        visibility: visible;
+        opacity: 1;
+    }
+    img.event:hover {
         visibility: hidden !important;
         opacity: 0 !important;
     }

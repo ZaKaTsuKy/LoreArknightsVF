@@ -1,205 +1,641 @@
-<!DOCTYPE html>
-<html>
+@charset "UTF-8";
+@media all and (min-width: 1920px) {
+    body {
+        background-image: url('https://cdn.discordapp.com/attachments/673566076658909205/770034883451551824/backnologo.jpg');
+        /* wall 1 ak https://pbs.twimg.com/media/DS-CPryVwAE_N5Y.jpg:large */
+        /*wall 2 ak https://images4.alphacoders.com/103/thumb-1920-1034459.jpg*/
+        background-attachment: fixed;
+        z-index: 0;
+        background-size: auto;
+    }
+    img.logo {
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+    }
+    /*@keyframes logo {
+        from {
+            opacity: 0;
+            transform: translateY(-100px);
+            width: 0px;
+        }
+        to {
+            transform: translateY(0px);
+            opacity: 1;
+            width: 500px;
+        }
+    }
+    
+    img.logo {
+        animation: logo 3s;
+        animation-delay: 0s;
+        animation-fill-mode: both;
+    }*/
+    img.blake2 {
+        width: 600px;
+        height: auto;
+        visibility: hidden;
+        position: fixed;
+        box-shadow: 8px 3px 12px black;
+        transition: visibility 0.01s, opacity 0.7s;
+        opacity: 0;
+        z-index: 4;
+        right: 550px;
+        top: 250px;
+    }
+    a:hover img.blake2 {
+        visibility: visible;
+        opacity: 1;
+    }
+    img.blake2:hover {
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+    #menu-demo2,
+    #menu-demo2 ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        z-index: 5;
+    }
+    #menu-demo2 li {
+        display: inline-block;
+        position: relative;
+        border-radius: 8px 8px 0 0;
+    }
+    #menu-demo2 ul li {
+        display: inherit;
+        border-radius: 0;
+    }
+    #menu-demo2 ul li:hover {
+        border-radius: 0;
+    }
+    #menu-demo2 ul li:last-child {
+        border-radius: 0 0 8px 8px;
+    }
+    #menu-demo2 ul {
+        position: absolute;
+        z-index: 1000;
+        display: none;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+    #menu-demo2 li:hover ul {
+        display: block;
+    }
+    /* background des liens menus */
+    #menu-demo2 li:first-child {
+        background-color: #729EBF;
+        background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+        background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    }
+    #menu-demo2 li:nth-child(2) {
+        background-color: #729EBF;
+        background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+        background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    }
+    #menu-demo2 li:nth-child(3) {
+        background-color: #729EBF;
+        background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+        background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    }
+    #menu-demo2 li:nth-child(4) {
+        background-color: #729EBF;
+        background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+        background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    }
+    #menu-demo2 li:last-child {
+        background-color: #729EBF;
+        background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+        background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    }
+    /* background des liens sous menus */
+    #menu-demo2 li:first-child li {
+        background: #333A40;
+    }
+    #menu-demo2 li:nth-child(2) li {
+        background: #333A40;
+    }
+    #menu-demo2 li:nth-child(3) li {
+        background: #333A40;
+    }
+    #menu-demo2 li:nth-child(4) li {
+        background: #333A40;
+    }
+    #menu-demo2 li:last-child li {
+        background: #333A40;
+    }
+    /* background des liens menus et sous menus au survol */
+    #menu-demo2 li:first-child:hover,
+    #menu-demo2 li:first-child li:hover {
+        background: #729EBF;
+    }
+    #menu-demo2 li:nth-child(2):hover,
+    #menu-demo2 li:nth-child(2) li:hover {
+        background: #729EBF;
+    }
+    #menu-demo2 li:nth-child(3):hover,
+    #menu-demo2 li:nth-child(3) li:hover {
+        background: #729EBF;
+    }
+    #menu-demo2 li:nth-child(4):hover,
+    #menu-demo2 li:nth-child(4) li:hover {
+        background: #729EBF;
+    }
+    #menu-demo2 li:last-child:hover,
+    #menu-demo2 li:last-child li:hover {
+        background: #729EBF;
+    }
+    /* les a href */
+    #menu-demo2 a {
+        text-decoration: none;
+        display: block;
+        padding: 8px 32px;
+        color: #fff;
+        font-family: arial;
+    }
+    #menu-demo2 ul a {
+        padding: 8px 0;
+    }
+    #menu-demo2 li:hover li a {
+        color: #fff;
+        text-transform: inherit;
+    }
+    #menu-demo2 li:hover a,
+    #menu-demo2 li li:hover a {
+        color: #000;
+    }
+    @keyframes menu {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    ul.menu {
+        animation: menu 5s;
+        animation-delay: 0s;
+        animation-fill-mode: both;
+    }
+    #slideshow {
+        position: fixed;
+        /*le parent positionné*/
+        width: 500px;
+        /*limite en largeur (1 élément du slideshow)*/
+        height: 1000px;
+        /*limite en hauteur*/
+        overflow: hidden;
+        /*on cache ce qui déborde*/
+    }
+    .sContent {
+        display: inline-block;
+    }
+    #sContent li {
+        display: inline-block;
+        /*on aligne les éléments du slideshow*/
+    }
+    #sContent {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        animation-name: AutoSlide;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: 3s;
+    }
+    article img {
+        width: 500px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    article img.circle {
+        filter: grayscale(0) blur(0px);
+        transition: all 0.5s ease;
+    }
+    article a:hover img.circle {
+        width: 800px;
+        height: auto;
+        transform: rotate(720deg);
+        border-radius: 1px 1px 60px goldenrod;
+        margin-left: auto;
+        margin-top: auto;
+    }
+    article img.zoom {
+        visibility: hidden;
+    }
+    /*rubrique 1*/
+    .main {
+        position: relative;
+        width: 35%;
+        height: auto;
+        left: 230px;
+        z-index: 2;
+        border: 2px solid darkred;
+        opacity: 0.3;
+        float: left;
+    }
+    a:hover img.main {
+        opacity: 1;
+        box-shadow: 0px 0px 60px goldenrod;
+    }
+    /* rubrique 2*/
+    .main2 {
+        position: relative;
+        width: 35%;
+        height: auto;
+        right: 230px;
+        z-index: 2;
+        border: 2px solid darkred;
+        opacity: 0.3;
+        float: right;
+    }
+    a:hover img.main2 {
+        opacity: 1;
+        box-shadow: 0px 0px 60px goldenrod;
+    }
+    /* rubrique 3*/
+    .main3 {
+        top: 50px;
+        position: relative;
+        width: 35%;
+        height: auto;
+        right: 230px;
+        z-index: 2;
+        border: 2px solid darkred;
+        opacity: 0.3;
+        float: right;
+    }
+    a:hover img.main3 {
+        opacity: 1;
+        box-shadow: 0px 0px 60px goldenrod;
+    }
+    /*rubrique 4*/
+    .main4 {
+        top: 50px;
+        position: relative;
+        width: 35%;
+        height: auto;
+        left: 230px;
+        z-index: 2;
+        border: 2px solid darkred;
+        opacity: 0.3;
+        float: left;
+    }
+    a:hover img.main4 {
+        opacity: 1;
+        box-shadow: 0px 0px 60px goldenrod;
+    }
+    /*rubrique 5*/
+    .main5 {
+        top: 100px;
+        position: relative;
+        width: 35%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        z-index: 2;
+        border: 2px solid darkred;
+        opacity: 0.3;
+    }
+    a:hover img.main5 {
+        opacity: 1;
+        box-shadow: 0px 0px 60px goldenrod;
+    }
+}
 
-<head>
-    <title>Lore Arknights VF</title>
-    <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="style.css">
-</head>
 
-<body>
-    <!-- <div id="slideshow">
-        <div id="s1">
-            <div id="s2">
-                <div id="s3">
+/*taille ecran entre 1080 et 1920*/
 
-                    <ul id="sContent" class="sContent">
-                        <a href="#">
-                            <li><img src="https://cdn.discordapp.com/attachments/770037504015335505/771133429630631946/e7.png" /></li>
-                        </a>
-                      
-                        <li><img src="https://cdn.discordapp.com/attachments/770037504015335505/773843791920234496/e0.1lil.png" /></li>
-                     
-                        <li><img src="https://cdn.discordapp.com/attachments/770037504015335505/773843791920234496/e0.1lil.png" /></li>
-                        <a href="#">
-                            <li><img src="https://cdn.discordapp.com/attachments/770037504015335505/771133429630631946/e7.png" /></li>
-
-                           
-                            <li><img src="https://cdn.discordapp.com/attachments/770037504015335505/773843791920234496/e0.1lil.png" /></li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-        </div>-->
-
-    </div>
-    <img class="logo" src="https://cdn.discordapp.com/attachments/770037504015335505/774922250835066880/logosprite2.png">
-
-    <ul class="menu-demo2" id="menu-demo2">
-        <li><a href="#">Histoire Pincipale</a>
-            <ul>
-                <li><a href="#">Evil Time Part 1<img class="blake2" class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/773843791920234496/e0.1lil.png">
-                </a></li>
-                <li><a href="#">Evil Time Part 2<img class="blake2"class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/771138043193065502/e1.1.png">
-                </a></li>
-                <li><a href="#">Separated Hearts<img class="blake2"class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/774920530692014080/e2.1.png"></a></li>
-                <li><a href="#">Stinging Shock<img class="blake2"class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/774920634450706442/E3.1.png"></a></li>
-                <li><a href="#">Burning Run<img class="blake2"class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/774920627885965312/e4.1.png"></a></li>
-                <li><a href="#">Necessary Solutions<img class="blake2"class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/774920683472814130/e5.1.png"></a></li>
-                <li><a href="#">Partial Necrosis<img class="blake2"class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/774920685256048650/e6.png"></a></li>
-                <li><a href="#">Birth of a Tragedy<img class="blake2"class="lazy"
-                    src="https://media.discordapp.net/attachments/770037504015335505/771133429630631946/e7.png"></a></li>
-                <li><a href="#">Roaring Flare<img class="blake2"class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/773843791920234496/e0.1lil.png"></a></li>
-            </ul>
-        </li>
-        <li><a href="#">Evènements</a>
-            <ul>
-                <li><a href="#">Grani and the Knights' Treasure<img class="event" class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/775388376634753034/1big.png"></a></li>
-                <li><a href="#">Operational Intelligence<img class="event" class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/775388356434460682/2big.jpg"></a></li>
-                <li><a href="#">Heart of Surging Flame Part 1<img class="event" class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/775388375150493716/3big.jpg"></a></li>
-                <li><a href="#">Heart of Surging Flame Part 2<img class="event" class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/775388470377316372/4big.png"></a></li>
-                <li><a href="#">Code of Brawl<img class="event" class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/775388395622629406/5big.jpg"></a></li>
-                <li><a href="#">Ancient Forge<img class="event" class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/775388397283704873/6big.jpg"></a></li>
-                <li><a href="#">Stories of Afternoon<img class="event" class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/775388465021583370/7big.jpg"></a></li>
-                <li><a href="#">Darknights' Memoir<img class="event" class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/775388407207428126/8big.jpg"></a></li>
-                <li><a href="#">Children of Ursus<img class="event" class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/775388429047038002/9big.jpg"></a></li>
-                <li><a href="#">Twilight of Wolumonde<img class="event" class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/775388437955870751/10big.jpg"></a></li>
-                <li><a href="#">Heart of Surging Flame Restropection<img class="event" class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/775388376634753034/1big.png"></a></li>
-                <li><a href="#">Gavial The Great Chief Returns<img class="event" class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/775388454157549598/11big.jpg"></a></li>
-                <li><a href="#">Rewinding Breeze<img class="event" class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/775388459485364315/12big.jpg"></a></li>
-                <li><a href="#">Maria Nearl<img class="event" class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/775388465344413716/13big.jpg"></a></li>
-            </ul>
-        </li>
-        <li><a href="#">Personnages</a>
-            <ul>
-                <li><a href="#">Abyssal Hunters</a></li>
-                <li><a href="#">Black Steel</a></li>
-                <li><a href="#">Kazimierz</a></li>
-                <li><a href="#">KFFRG</a></li>
-                <li><a href="#">LGD</a></li>
-                <li><a href="#">Penguin Logistics</a></li>
-                <li><a href="#">Reunion</a></li>
-                <li><a href="#">Rhine Lab</a></li>
-                <li><a href="#">Rhodes Island</a></li>
-                <li><a href="#">Rim Billiton</a></li>
-                <li><a href="#">Siesta</a></li>
-                <li><a href="#">Ursus</a></li>
-                <li><a href="#">Victoria</a></li>
-                <li><a href="#">Others</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Histoire du monde</a>
-            <ul>
-                <li><a href="#">Terra</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Résumés</a>
-            <ul>
-                <li><a href="#">Histoire Principale</a></li>
-                <li><a href="#">Evènements</a></li>
-                <li><a href="#">Personnages</a></li>
-                <li><a href="#">Histoire du monde</a></li>
-            </ul>
-        </li>
-    </ul>
-    </br>
-
-    <div class="topic">
-        <a href="#"><img class="main" src="https://cdn.discordapp.com/attachments/770037504015335505/774926564743839794/maxresdefault.png"></a>
-        <a href="#"><img class="main2" src="https://cdn.discordapp.com/attachments/770037504015335505/774926564743839794/maxresdefault.png"></a>
-        <a href="#"><img class="main3" src="https://cdn.discordapp.com/attachments/770037504015335505/774926564743839794/maxresdefault.png"></a>
-        <a href="#"><img class="main4" src="https://cdn.discordapp.com/attachments/770037504015335505/774926564743839794/maxresdefault.png"></a>
-        <a href="#"><img class="main5" src="https://cdn.discordapp.com/attachments/770037504015335505/774926564743839794/maxresdefault.png"></a>
-    </div>
-
-    <!--<section style="text-align: center;" id="un">
-        <article>
-            <div class="tool1">
-                <a href="#">
-                    <img class="circle" src="https://cdn.discordapp.com/attachments/770037504015335505/773849741829079050/20190506114952_31829.jpg">
-                </a>
-                <p class="t1">Main Story.</p>
-
-
-            </div>
-        </article>
-    </section>-->
-
-    <SCRIPT type="text/javascript">
-        // code javascript
-        document.addEventListener("DOMContentLoaded", function() {
-            var lazyloadImages;
-
-            if ("IntersectionObserver" in window) {
-                lazyloadImages = document.querySelectorAll(".lazy");
-                var imageObserver = new IntersectionObserver(function(entries, observer) {
-                    entries.forEach(function(entry) {
-                        if (entry.isIntersecting) {
-                            var image = entry.target;
-                            image.src = image.dataset.src;
-                            image.classList.remove("lazy");
-                            imageObserver.unobserve(image);
-                        }
-                    });
-                });
-
-                lazyloadImages.forEach(function(image) {
-                    imageObserver.observe(image);
-                });
-            } else {
-                var lazyloadThrottleTimeout;
-                lazyloadImages = document.querySelectorAll(".lazy");
-
-                function lazyload() {
-                    if (lazyloadThrottleTimeout) {
-                        clearTimeout(lazyloadThrottleTimeout);
-                    }
-
-                    lazyloadThrottleTimeout = setTimeout(function() {
-                        var scrollTop = window.pageYOffset;
-                        lazyloadImages.forEach(function(img) {
-                            if (img.offsetTop < (window.innerHeight + scrollTop)) {
-                                img.src = img.dataset.src;
-                                img.classList.remove('lazy');
-                            }
-                        });
-                        if (lazyloadImages.length == 0) {
-                            document.removeEventListener("scroll", lazyload);
-                            window.removeEventListener("resize", lazyload);
-                            window.removeEventListener("orientationChange", lazyload);
-                        }
-                    }, 20);
-                }
-
-                document.addEventListener("scroll", lazyload);
-                window.addEventListener("resize", lazyload);
-                window.addEventListener("orientationChange", lazyload);
-            }
-        })
-    </SCRIPT>
-
-</body>
-
-</html>
+@media all and (min-width: 1080px) and (max-width:1919px) {
+    body {
+        background-image: url('https://cdn.discordapp.com/attachments/673566076658909205/770034883451551824/backnologo.jpg');
+        /* wall 1 ak https://pbs.twimg.com/media/DS-CPryVwAE_N5Y.jpg:large */
+        /*wall 2 ak https://images4.alphacoders.com/103/thumb-1920-1034459.jpg*/
+        background-attachment: fixed;
+        z-index: 0;
+        background-size: auto;
+    }
+    img.logo {
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+    }
+    /*@keyframes logo {
+        from {
+            opacity: 0;
+            transform: translateY(-100px);
+            width: 0px;
+        }
+        to {
+            transform: translateY(0px);
+            opacity: 1;
+            width: 500px;
+        }
+    }
+    
+    img.logo {
+        animation: logo 3s;
+        animation-delay: 0s;
+        animation-fill-mode: both;
+    }*/
+    img.blake2 {
+        width: 60px;
+        height: auto;
+        visibility: hidden;
+        position: fixed;
+        box-shadow: 8px 3px 12px black;
+        transition: visibility 0.01s, opacity 0.7s;
+        opacity: 0;
+        z-index: 4;
+        right: 550px;
+        top: 250px;
+    }
+    a:hover img.blake2 {
+        visibility: visible;
+        opacity: 1;
+    }
+    img.blake2:hover {
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+    #menu-demo2,
+    #menu-demo2 ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        z-index: 5;
+    }
+    #menu-demo2 li {
+        display: inline-block;
+        position: relative;
+        border-radius: 8px 8px 0 0;
+    }
+    #menu-demo2 ul li {
+        display: inherit;
+        border-radius: 0;
+    }
+    #menu-demo2 ul li:hover {
+        border-radius: 0;
+    }
+    #menu-demo2 ul li:last-child {
+        border-radius: 0 0 8px 8px;
+    }
+    #menu-demo2 ul {
+        position: absolute;
+        z-index: 1000;
+        display: none;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+    #menu-demo2 li:hover ul {
+        display: block;
+    }
+    /* background des liens menus */
+    #menu-demo2 li:first-child {
+        background-color: #729EBF;
+        background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+        background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    }
+    #menu-demo2 li:nth-child(2) {
+        background-color: #729EBF;
+        background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+        background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    }
+    #menu-demo2 li:nth-child(3) {
+        background-color: #729EBF;
+        background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+        background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    }
+    #menu-demo2 li:nth-child(4) {
+        background-color: #729EBF;
+        background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+        background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    }
+    #menu-demo2 li:last-child {
+        background-color: #729EBF;
+        background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+        background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+    }
+    /* background des liens sous menus */
+    #menu-demo2 li:first-child li {
+        background: #333A40;
+    }
+    #menu-demo2 li:nth-child(2) li {
+        background: #333A40;
+    }
+    #menu-demo2 li:nth-child(3) li {
+        background: #333A40;
+    }
+    #menu-demo2 li:nth-child(4) li {
+        background: #333A40;
+    }
+    #menu-demo2 li:last-child li {
+        background: #333A40;
+    }
+    /* background des liens menus et sous menus au survol */
+    #menu-demo2 li:first-child:hover,
+    #menu-demo2 li:first-child li:hover {
+        background: #729EBF;
+    }
+    #menu-demo2 li:nth-child(2):hover,
+    #menu-demo2 li:nth-child(2) li:hover {
+        background: #729EBF;
+    }
+    #menu-demo2 li:nth-child(3):hover,
+    #menu-demo2 li:nth-child(3) li:hover {
+        background: #729EBF;
+    }
+    #menu-demo2 li:nth-child(4):hover,
+    #menu-demo2 li:nth-child(4) li:hover {
+        background: #729EBF;
+    }
+    #menu-demo2 li:last-child:hover,
+    #menu-demo2 li:last-child li:hover {
+        background: #729EBF;
+    }
+    /* les a href */
+    #menu-demo2 a {
+        text-decoration: none;
+        display: block;
+        padding: 8px 32px;
+        color: #fff;
+        font-family: arial;
+    }
+    #menu-demo2 ul a {
+        padding: 8px 0;
+    }
+    #menu-demo2 li:hover li a {
+        color: #fff;
+        text-transform: inherit;
+    }
+    #menu-demo2 li:hover a,
+    #menu-demo2 li li:hover a {
+        color: #000;
+    }
+    @keyframes menu {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    ul.menu {
+        animation: menu 5s;
+        animation-delay: 0s;
+        animation-fill-mode: both;
+    }
+    #slideshow {
+        position: fixed;
+        /*le parent positionné*/
+        width: 50%;
+        /*limite en largeur (1 élément du slideshow)*/
+        height: auto;
+        /*limite en hauteur*/
+        overflow: hidden;
+        /*on cache ce qui déborde*/
+    }
+    .sContent {
+        display: inline-block;
+    }
+    #sContent li {
+        display: inline-block;
+        /*on aligne les éléments du slideshow*/
+    }
+    #sContent {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        animation-name: AutoSlide;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: 3s;
+    }
+    article img {
+        width: 50%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    article img.circle {
+        filter: grayscale(0) blur(0px);
+        transition: all 0.5s ease;
+    }
+    article a:hover img.circle {
+        width: 50%;
+        height: auto;
+        transform: rotate(720deg);
+        border-radius: 1px 1px 60px goldenrod;
+        margin-left: auto;
+        margin-top: auto;
+    }
+    article img.zoom {
+        visibility: hidden;
+    }
+    /*rubrique 1*/
+    .main {
+        position: relative;
+        width: 45%;
+        height: auto;
+        z-index: 2;
+        border: 2px solid darkred;
+        opacity: 0.3;
+        float: left;
+    }
+    a:hover img.main {
+        opacity: 1;
+        box-shadow: 0px 0px 60px goldenrod;
+    }
+    /* rubrique 2*/
+    .main2 {
+        position: relative;
+        width: 45%;
+        height: auto;
+        z-index: 2;
+        border: 2px solid darkred;
+        opacity: 0.3;
+        float: right;
+    }
+    a:hover img.main2 {
+        opacity: 1;
+        box-shadow: 0px 0px 60px goldenrod;
+    }
+    /* rubrique 3*/
+    .main3 {
+        top: 50px;
+        position: relative;
+        width: 45%;
+        height: auto;
+        z-index: 2;
+        border: 2px solid darkred;
+        opacity: 0.3;
+        float: right;
+    }
+    a:hover img.main3 {
+        opacity: 1;
+        box-shadow: 0px 0px 60px goldenrod;
+    }
+    /*rubrique 4*/
+    .main4 {
+        top: 50px;
+        position: relative;
+        width: 45%;
+        height: auto;
+        z-index: 2;
+        border: 2px solid darkred;
+        opacity: 0.3;
+        float: left;
+    }
+    a:hover img.main4 {
+        opacity: 1;
+        box-shadow: 0px 0px 60px goldenrod;
+    }
+    /*rubrique 5*/
+    .main5 {
+        top: 100px;
+        position: relative;
+        width: 45%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        z-index: 2;
+        border: 2px solid darkred;
+        opacity: 0.3;
+    }
+    a:hover img.main5 {
+        opacity: 1;
+        box-shadow: 0px 0px 60px goldenrod;
+    }
+    .topic {
+        width: 75em;
+        border: 0px;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+}

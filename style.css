@@ -7,6 +7,7 @@
         background-attachment: fixed;
         z-index: 0;
         background-size: auto;
+        background-repeat: no-repeat;
     }
     img.logo {
         position: relative;
@@ -348,6 +349,7 @@
         background-attachment: fixed;
         z-index: 0;
         background-size: auto;
+        background-repeat: no-repeat;
     }
     img.logo {
         position: relative;

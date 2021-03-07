@@ -33,7 +33,7 @@
         animation-delay: 0s;
         animation-fill-mode: both;
     }*/
-    img.blake2 {
+    img.IMG_MS {
         width: 30%;
         height: auto;
         visibility: hidden;
@@ -45,11 +45,11 @@
         right: 550px;
         top: 250px;
     }
-    a:hover img.blake2 {
+    a:hover img.IMG_MS {
         visibility: visible;
         opacity: 1;
     }
-    img.blake2:hover {
+    img.IMG_MS:hover {
         visibility: hidden !important;
         opacity: 0 !important;
     }
@@ -325,12 +325,11 @@
         position: relative;
         width: 35%;
         height: auto;
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
+        left: 230px;
         z-index: 2;
         border: 2px solid darkred;
         opacity: 0.3;
+        float: left;
     }
     a:hover img.main5 {
         opacity: 1;
@@ -375,7 +374,7 @@
         animation-delay: 0s;
         animation-fill-mode: both;
     }*/
-    img.blake2 {
+    img.IMG_MS {
         width: 30%;
         height: auto;
         visibility: hidden;
@@ -387,11 +386,11 @@
         right: 550px;
         top: 250px;
     }
-    a:hover img.blake2 {
+    a:hover img.IMG_MS {
         visibility: visible;
         opacity: 1;
     }
-    img.blake2:hover {
+    img.IMG_MS:hover {
         visibility: hidden !important;
         opacity: 0 !important;
     }
@@ -663,9 +662,6 @@
         position: relative;
         width: 45%;
         height: auto;
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
         z-index: 2;
         border: 2px solid darkred;
         opacity: 0.3;

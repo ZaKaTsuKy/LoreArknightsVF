@@ -6,8 +6,10 @@
         /*wall 2 ak https://images4.alphacoders.com/103/thumb-1920-1034459.jpg*/
         background-attachment: fixed;
         z-index: 0;
-        background-size: auto;
         background-repeat: no-repeat;
+        background-color: #303e4b;
+        background-size: cover;
+        background-position: center;
     }
     img.logo {
         position: relative;
@@ -16,24 +18,6 @@
         margin-right: auto;
         z-index: 1;
     }
-    /*@keyframes logo {
-        from {
-            opacity: 0;
-            transform: translateY(-100px);
-            width: 0px;
-        }
-        to {
-            transform: translateY(0px);
-            opacity: 1;
-            width: 500px;
-        }
-    }
-    
-    img.logo {
-        animation: logo 3s;
-        animation-delay: 0s;
-        animation-fill-mode: both;
-    }*/
     img.IMG_MS {
         width: 30%;
         height: auto;
@@ -348,8 +332,10 @@
         /*wall 2 ak https://images4.alphacoders.com/103/thumb-1920-1034459.jpg*/
         background-attachment: fixed;
         z-index: 0;
-        background-size: auto;
         background-repeat: no-repeat;
+        background-color: #303e4b;
+        background-size: cover;
+        background-position: center;
     }
     img.logo {
         position: relative;

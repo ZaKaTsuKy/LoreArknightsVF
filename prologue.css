@@ -309,7 +309,7 @@ a.ref:hover {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 1%;
-    border: 1px solid black;
+    border: -1px solid black;
 }
 
 
@@ -345,68 +345,11 @@ a.bas {
     display: none;
 }
 
-
-/*TEXTE STORY*/
-
-.p1 {
-    font-size: 30px;
+a.before,
+a.after {
+    font-size: 50px;
+    position: relative;
     margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 1%;
+    width: 350px;
     color: whitesmoke;
-}
-
-
-/*BOUTON TOP*/
-
-a.bas {
-    bottom: 10px;
-    right: 10px;
-    position: fixed;
-    z-index: 2;
-    color: red;
-}
-
-
-/*CACHER/MONTRER IMAGES*/
-
-.togg1 {
-    color: whitesmoke;
-}
-
-.d1 {
-    display: none;
-}
-
-
-/*TEXTE STORY*/
-
-.p1 {
-    font-size: 30px;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 1%;
-    color: whitesmoke;
-}
-
-
-/*BOUTON TOP*/
-
-a.bas {
-    bottom: 10px;
-    right: 10px;
-    position: fixed;
-    z-index: 2;
-    color: red;
-}
-
-
-/*CACHER/MONTRER IMAGES*/
-
-.togg1 {
-    color: whitesmoke;
-}
-
-.d1 {
-    display: none;
 }

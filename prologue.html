@@ -194,7 +194,7 @@
 
 
             <a class='after' id="togg1">After</a>
-            <img  id="image2" class='MS' style="cursor: pointer" onclick="change_img('image2')" src="https://cdn.discordapp.com/attachments/770037504015335505/836276379385331732/28ST.jpg" alt="" />
+            <img class='MS' src="https://cdn.discordapp.com/attachments/770037504015335505/836276379385331732/28ST.jpg" />
 
         </div>
     </div>
@@ -346,23 +346,6 @@
             document.getElementById(source).src = tabImg[n];
             n++;
             if (n >= tabImg.length)
-                n = 0;
-        }
-
-                //defilement d'images story 0-01
-        var tabImg2 = new Array(
-            "https://cdn.discordapp.com/attachments/770037504015335505/836276379385331732/28ST.jpg",
-             "https://cdn.discordapp.com/attachments/770037504015335505/835247943770308689/27ST3.jpg",
-             "https://cdn.discordapp.com/attachments/770037504015335505/835247940352081980/27ST2.jpg",
-             "https://cdn.discordapp.com/attachments/770037504015335505/835247936429490196/27ST.jpg",
-          
-        );
-        var n = 1;
-
-        function change_img(source) {
-            document.getElementById(source).src = tabImg2[n];
-            n++;
-            if (n >= tabImg2.length)
                 n = 0;
         }
 

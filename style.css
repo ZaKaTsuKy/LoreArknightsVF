@@ -340,7 +340,7 @@
 
 /*taille ecran entre 1080 et 1920*/
 
-@media all and (min-width: 1220px) and (max-width:1919px) {
+@media all  and (max-width:1919px) {
     body {
         background-image: url('https://cdn.discordapp.com/attachments/673566076658909205/770034883451551824/backnologo.jpg');
         /* wall 1 ak https://pbs.twimg.com/media/DS-CPryVwAE_N5Y.jpg:large */
@@ -387,7 +387,9 @@
         opacity: 0;
         z-index: 4;
         right: 550px;
-        top: 250px;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
     }
     a:hover img.IMG_MS {
         visibility: visible;

@@ -14,8 +14,6 @@ body{width:90%;margin:auto;min-width:600px;max-width:2000px}
     left: 0; 
     width: 100%;    
     height: auto;
-    filter: blur(4px);
-    opacity: 0.8;
 }
 
 @media screen and (max-width: 1080px) { /* Le traitement est ici spécifique à l'image */
@@ -246,6 +244,8 @@ img.event:hover {
 /*ENTETES*/
 
 .style {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     position: relative;
     margin-left: 40%;
     margin-top: 5%;
@@ -352,8 +352,6 @@ a.bas {
 
 
 /*CACHER/MONTRER IMAGES*/
-
-
 a.before,
 a.after {
     font-size: 50px;

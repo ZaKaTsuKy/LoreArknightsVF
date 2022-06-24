@@ -131,9 +131,7 @@ img.event:hover {
     display: block;
 }
 
-
 /* background des liens menus */
-
 #menu-demo2 li:first-child {
     background-color: #729EBF;
     background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
@@ -158,15 +156,19 @@ img.event:hover {
     background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
 }
 
+#menu-demo2 li:nth-child(5) {
+    background-color: #729EBF;
+    background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+
 #menu-demo2 li:last-child {
     background-color: #729EBF;
     background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
     background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
 }
 
-
 /* background des liens sous menus */
-
 #menu-demo2 li:first-child li {
     background: #333A40;
 }
@@ -183,13 +185,15 @@ img.event:hover {
     background: #333A40;
 }
 
+#menu-demo2 li:nth-child(5) li {
+    background: #333A40;
+}
+
 #menu-demo2 li:last-child li {
     background: #333A40;
 }
 
-
 /* background des liens menus et sous menus au survol */
-
 #menu-demo2 li:first-child:hover,
 #menu-demo2 li:first-child li:hover {
     background: #729EBF;
@@ -210,14 +214,17 @@ img.event:hover {
     background: #729EBF;
 }
 
+#menu-demo2 li:nth-child(5):hover,
+#menu-demo2 li:nth-child(5) li:hover {
+    background: #729EBF;
+}
+
 #menu-demo2 li:last-child:hover,
 #menu-demo2 li:last-child li:hover {
     background: #729EBF;
 }
 
-
 /* les a href */
-
 #menu-demo2 a {
     text-decoration: none;
     display: block;
@@ -239,7 +246,6 @@ img.event:hover {
 #menu-demo2 li li:hover a {
     color: #000;
 }
-
 
 /*ENTETES*/
 
@@ -370,4 +376,15 @@ a.after {
 
 .d1, .d2, .d3, .d4, .d5, .d6, .d7,  .d8, .d9{
     display: none;
+}
+
+input {
+    border: 2px solid black;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+::placeholder{
+    color: #000;
 }

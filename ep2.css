@@ -267,7 +267,7 @@ img.event:hover {
     position: relative;
     height: auto;
     z-index: 2;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(84, 80, 80);
     opacity: 0.7;
 }
 
@@ -291,6 +291,7 @@ a.ref, a.titre {
 /*BALISES INVISIBLE*/
 
 .titre {
+    border: 2px solid rgb(0, 0, 0);
     visibility: hidden;
     position: fixed;
     box-shadow: 8px 3px 12px black;

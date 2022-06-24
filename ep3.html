@@ -2,16 +2,18 @@
 <html>
 
 <head>
-    <title>Evil Time Part.1</title>
+    <title>Stinging Shock</title>
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="ep3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 
 <body>
-
+    <!--BOUTON MAIN MENU-->
     <a href="index.html"><img class="button" src="https://cdn.discordapp.com/attachments/770037504015335505/776832833528397830/kfo5wgrjpqf21.png"></a>
 
-
+    <!--MENU DEROULANT-->
     <ul class="menu-demo2" id="menu-demo2">
         <li><a href="#">Histoire Pincipale</a>
             <ul>
@@ -34,7 +36,7 @@
                 <li><a href="ep7.html">Birth of a Tragedy<img class="IMG_MS"class="lazy"
                     src="https://media.discordapp.net/attachments/770037504015335505/771133429630631946/e7.png"></a></li>
                 <li><a href="ep8.html">Roaring Flare<img class="IMG_MS"class="lazy"
-                    src="https://cdn.discordapp.com/attachments/770037504015335505/817756251391000598/e8.1.jpg"></a></li>
+                    src="https://cdn.discordapp.com/attachments/770037504015335505/818225037479772170/e8.1.png"></a></li>
             </ul>
         </li>
         <li><a href="#">Evènements</a>
@@ -102,16 +104,12 @@
         </li>
     </ul>
 
-    <h1>
-        Episode 0-01 Collapse
-    </h1>
-
+    <!--BALISES-->
     <div class="topic">
         <div class="e1">
             <a class="ref" href="#Collapse">Episode 0-01</a>
             <a class="a" href="#Collapse">Collapse</a>
         </div>
-
 
         </br>
 
@@ -122,30 +120,12 @@
 
         </br>
 
-
-        <div class="e1">
-            <a class="ref" href="#Pursuit">Episode 0-03</a>
-            <a class="a" href="#Pursuit">Pursuit</a>
-        </div>
-
-        </br>
-
-
         <div class="e1">
             <a class="ref" href="#Brawl">Episode 0-04</a>
             <a class="a" href="#Brawl">Brawl</a>
         </div>
 
         </br>
-
-
-        <div class="e1">
-            <a class="ref" href="#Corruption">Episode 0-05</a>
-            <a class="a" href="#Corruption">Corruption</a>
-        </div>
-
-        </br>
-
 
         <div class="e1">
             <a class="ref" href="#Assault">Episode 0-06</a>
@@ -154,14 +134,12 @@
 
         </br>
 
-
         <div class="e1">
             <a class="ref" href="#Infection">Episode 0-07</a>
             <a class="a" href="#Infection">Infection</a>
         </div>
 
         </br>
-
 
         <div class="e1">
             <a class="ref" href="#Hunting">Episode 0-08</a>
@@ -170,14 +148,12 @@
 
         </br>
 
-
         <div class="e1">
             <a class="ref" href="#Nearl">Episode 0-09</a>
             <a class="a" href="#Nearl">Nearl</a>
         </div>
 
         </br>
-
 
         <div class="e1">
             <a class="ref" href="#Dilemma">Episode 0-10</a>
@@ -194,66 +170,89 @@
 
     </div>
 
+
+    <!--ENTETE EPISODE 1-->
+    <div class="style">
+        <h1 class="niveau" id="To Lungmen">
+            <a id="togg1">Episode 2-01 : To Lungmen</a>
+        </h1>
+    </div>
+
+    <!--EPISODE 1-->
+    <div class="d1" id="d1">
+
+        <a class='before' id="before">Before</a>
+        <img loading='lazy' id="image1" class='MS' style="cursor: pointer" onclick="change_img('image1')"
+            src="https://cdn.discordapp.com/attachments/770037504015335505/836997574573555766/cachelore.png" alt="" />
+
+        <br><br> <br><br> <br><br>
+
+        <a class='after'>After</a>
+        <img loading='lazy' id="image2" class='MS' style="cursor: pointer" onclick="change_img2('image2')"
+            src="https://cdn.discordapp.com/attachments/770037504015335505/836997574573555766/cachelore.png" alt="" />
+
+    </div>
+
+    <!--EPISODE 4-->
+    <div class="style">
+        <h1 id="Brawl">
+            Episode 0-04 : Brawl
+        </h1>
+    </div>
+
+
+    <!--EPISODE 6-->
+    <div class="style">
+        <h1 id="Assault">
+            Episode 0-06 : Assault
+        </h1>
+    </div>
+
+
+    <!--EPISODE 7-->
+    <div class="style">
+        <h1 id="Infection">
+            Episode 0-07 : Infection
+        </h1>
+    </div>
+
+
+    <!--EPISODE 8-->
+    <div class="style">
+        <h1 id="Hunting">
+            Episode 0-08 : Hunting
+        </h1>
+    </div>
+
+
+    <!--EPISODE 9-->
+    <div class="style">
+        <h1 id="Nearl">
+            Episode 0-09 : Nearl
+        </h1>
+    </div>
+
+
+    <!--EPISODE 10-->
+    <div class="style">
+        <h1 id="Dilemma">
+            Episode 0-10 : Dilemma
+        </h1>
+    </div>
+
+
+    <!--EPISODE 11-->
+    <div class="style">
+        <h1 id="Blockade Running">
+            Episode 0-11 : Blockade Running
+        </h1>
+    </div>
+
+    <!--BALISE TOP-->
     <a class="bas" href="#menu-demo2">haut de page</a>
 
 
-    <SCRIPT type="text/javascript">
-        // code javascript
-        document.addEventListener("DOMContentLoaded", function() {
-            var lazyloadImages;
-
-            if ("IntersectionObserver" in window) {
-                lazyloadImages = document.querySelectorAll(".lazy");
-                var imageObserver = new IntersectionObserver(function(entries, observer) {
-                    entries.forEach(function(entry) {
-                        if (entry.isIntersecting) {
-                            var image = entry.target;
-                            image.src = image.dataset.src;
-                            image.classList.remove("lazy");
-                            imageObserver.unobserve(image);
-                        }
-                    });
-                });
-
-                lazyloadImages.forEach(function(image) {
-                    imageObserver.observe(image);
-                });
-            } else {
-                var lazyloadThrottleTimeout;
-                lazyloadImages = document.querySelectorAll(".lazy");
-
-                function lazyload() {
-                    if (lazyloadThrottleTimeout) {
-                        clearTimeout(lazyloadThrottleTimeout);
-                    }
-
-                    lazyloadThrottleTimeout = setTimeout(function() {
-                        var scrollTop = window.pageYOffset;
-                        lazyloadImages.forEach(function(img) {
-                            if (img.offsetTop < (window.innerHeight + scrollTop)) {
-                                img.src = img.dataset.src;
-                                img.classList.remove('lazy');
-                            }
-                        });
-                        if (lazyloadImages.length == 0) {
-                            document.removeEventListener("scroll", lazyload);
-                            window.removeEventListener("resize", lazyload);
-                            window.removeEventListener("orientationChange", lazyload);
-                        }
-                    }, 20);
-                }
-
-                document.addEventListener("scroll", lazyload);
-                window.addEventListener("resize", lazyload);
-                window.addEventListener("orientationChange", lazyload);
-            }
-        })
-    </SCRIPT>
+    <SCRIPT src="index.js"></SCRIPT>
+<script src="ep3.js"></script>
 </body>
-<!-- <a href="#japonais"> balise vers japonais </a>
-             
-
-              
-              <div id="japonais"> japonais le sang</div>-->
-
 </html>

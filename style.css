@@ -153,6 +153,12 @@ img.event:hover {
     background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
 }
 
+#menu-demo2 li:nth-child(5) {
+    background-color: #729EBF;
+    background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+}
+
 #menu-demo2 li:last-child {
     background-color: #729EBF;
     background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
@@ -173,6 +179,10 @@ img.event:hover {
 }
 
 #menu-demo2 li:nth-child(4) li {
+    background: #333A40;
+}
+
+#menu-demo2 li:nth-child(5) li {
     background: #333A40;
 }
 
@@ -198,6 +208,11 @@ img.event:hover {
 
 #menu-demo2 li:nth-child(4):hover,
 #menu-demo2 li:nth-child(4) li:hover {
+    background: #729EBF;
+}
+
+#menu-demo2 li:nth-child(5):hover,
+#menu-demo2 li:nth-child(5) li:hover {
     background: #729EBF;
 }
 
@@ -294,7 +309,7 @@ article img.circle {
 }
 
 article a:hover img.circle {
-    width: 800px;
+    width: 600px;
     height: auto;
     transform: rotate(720deg);
     border-radius: 1px 1px 60px goldenrod;
@@ -309,9 +324,9 @@ article img.zoom {
 /*rubrique 1*/
 .main {
     position: relative;
-    width: 35%;
+    width: 40%;
     height: auto;
-    left: 12%;
+    left: 8%;
     z-index: 2;
     border: 2px solid darkred;
     opacity: 0.3;
@@ -328,9 +343,9 @@ a:hover .main {
 /* rubrique 2*/
 .main2 {
     position: relative;
-    width: 35%;
+    width: 40%;
     height: auto;
-    right: 12%;
+    right: 8%;
     z-index: 2;
     border: 2px solid darkred;
     opacity: 0.3;
@@ -349,9 +364,9 @@ a:hover img.main2 {
 .main3 {
     top: 50px;
     position: relative;
-    width: 35%;
+    width: 40%;
     height: auto;
-    right: 12%;
+    right: 8%;
     z-index: 2;
     border: 2px solid darkred;
     opacity: 0.3;
@@ -370,9 +385,9 @@ a:hover img.main3 {
 .main4 {
     top: 50px;
     position: relative;
-    width: 35%;
+    width: 40%;
     height: auto;
-    left: 12%;
+    left: 8%;
     z-index: 2;
     border: 2px solid darkred;
     opacity: 0.3;
@@ -391,9 +406,9 @@ a:hover img.main4 {
 .main5 {
     top: 100px;
     position: relative;
-    width: 35%;
+    width: 40%;
     height: auto;
-    left: 12%;
+    left: 8%;
     z-index: 2;
     border: 2px solid darkred;
     opacity: 0.3;
@@ -411,13 +426,13 @@ a:hover img.main5 {
 .main6 {
     top: 100px;
     position: relative;
-    width: 35%;
+    width: 40%;
     height: auto;
     z-index: 2;
     border: 2px solid darkred;
     opacity: 0.3;
     float: right;
-    right: 12%;
+    right: 8%;
     transition: transform .1s;
 }
 
@@ -426,4 +441,15 @@ a:hover img.main6 {
     box-shadow: 0px 0px 60px goldenrod;
     -webkit-transform: scale(1.075);
     transform: scale(1.075);
+}
+
+input {
+    border: 2px solid black;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+::placeholder{
+    color: #000;
 }
